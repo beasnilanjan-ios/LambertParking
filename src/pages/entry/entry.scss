@@ -1,0 +1,53 @@
+page-entry {
+    .pt-5 {
+        padding-top: 35px;
+    }
+    .form-control {
+        border: 1px solid #ccc;
+        padding: 0;
+        background: transparent;
+        height: 4rem;
+        border-radius: 64px;
+        margin: 20px 0;
+        width: 100%;
+        min-height: 4rem;
+    }
+    .form-control input {
+        margin: 11px!important;
+    }
+    .buttonMargin {
+        background: #ff970b;
+        height: 4rem;
+    }
+    .buttonMargin.btn-blue {
+        background: #034083;
+    }
+    .position-relative {
+        width: 70%;
+        margin: 50px auto;
+        position: relative;
+    }
+    .border-1 {
+        border: 1px solid #999;
+        height: 1px;
+    }
+    .position-relative span {
+        position: absolute;
+        background: #fff;
+        top: -7px;
+        width: 20%;
+        text-align: center;
+        z-index: 999;
+        left: 40%;
+    }
+    .btnValidate {
+        background: #034083;
+    }
+}
+.print-btn {
+    width:50%;
+}
+.print-btn-wrap {
+    text-align: center;
+    margin-top: 10px;
+}

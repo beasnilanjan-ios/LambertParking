@@ -1,0 +1,36 @@
+<ion-header>
+  <ion-navbar>
+    <button class="custom-nav-icon" ion-button menuToggle>
+      <ion-icon name="navbar"></ion-icon>
+    </button>
+    <ion-title text-center>Coupons</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content no-padding>
+  <div text-center>
+   <h3></h3>
+    <hr>
+  </div>
+
+  <div *ngIf="noCouponsMessage" class="empty-message" text-center padding>
+    <p>{{ noCouponsMessage }}</p>
+  </div>
+
+  <ion-list no-padding no-margin>
+    <ion-card *ngFor="let item of couponList">
+      <ion-item>
+        <div class="coupon-card">
+          <div class="coupon-token">{{ item.token_no }}</div>
+          <div class="coupon-route">
+            <strong>{{ item.start_position }}</strong> To <strong>{{ item.end_position }}</strong>
+          </div>
+          <div class="coupon-address">
+            <b>Address:</b>
+            <span>{{ item.location }}</span>
+          </div>
+        </div>
+      </ion-item>
+    </ion-card>
+  </ion-list>
+</ion-content>

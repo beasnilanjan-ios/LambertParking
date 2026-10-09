@@ -1,0 +1,94 @@
+<ion-header>
+  <ion-navbar [hideBackButton]="true">
+    <ion-title text-center>Lambert Parking</ion-title>
+    <img src="../../assets/imgs/power.png" (click)="logout()" class="power-btn">
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+  <ion-list>
+    <ion-item class="mt-m15"> 
+      <div class="fontBold">
+        <ion-label text-center *ngIf="defaultData">Welcome, {{defaultData.name}}</ion-label>
+      </div>      
+      <div style="clear: both;"></div>
+    </ion-item>
+
+    <ion-item no-lines>
+      <ion-label><b>Select Parking Lot</b></ion-label>
+    </ion-item>
+
+    <ion-item no-lines>
+      <ion-select class="myCustomSelect" (ionChange)="yearChange($event)" [(ngModel)]="preselect" [disabled]="!response?.parking?.length">
+        <ion-option *ngFor="let parkingLot of response?.parking">{{parkingLot.position}}</ion-option>
+      </ion-select>
+      <p class="empty-list-msg" *ngIf="response && (!response.parking || response.parking.length === 0)">No parking lot assigned to this account.</p>
+    </ion-item>
+
+    <ion-item no-lines>
+      <ion-label><b>Select Vehicle Type</b></ion-label>
+    </ion-item>
+
+    <ion-item no-lines>
+      <ion-select class="myCustomSelect" (ionChange)="yearChange2($event)" [(ngModel)]="preselect2" [disabled]="!response2?.parkings?.length">
+        <ion-option *ngFor="let vehicleType of response2?.parkings">{{vehicleType.vehicle_type}}</ion-option>
+      </ion-select>
+      <p class="empty-list-msg" *ngIf="response2 && (!response2.parkings || response2.parkings.length === 0)">No vehicle type available for selected parking lot.</p>
+    </ion-item>
+
+    <ion-item no-lines>
+      <div>
+        <button class="btnViewPlan" ion-button full round (click)="btnViewPlan()">View Plan</button>
+      </div>
+    </ion-item>
+    
+
+    <ion-item no-lines>
+      <div *ngIf="buttonClicked">
+        <!-- -------------- ENTRY VEHICLE--------------- -->
+
+        <ion-card (click)="entryVehicle()">
+            <ion-card-content class="card-bg">
+              <table class="table text-uppercase">
+                <tr>
+                  <!-- <td rowspan="2"><img src="../../assets/imgs/arrow2.png"></td>                   -->
+                  <td align="left">Total Slot - <b>{{valueToDisplay2.Total_slot}}</b></td>
+                  <td align="right">Total Advance Slot - <b>{{valueToDisplay2.advance_slot}}</b></td>
+                  <!-- <td align="right"><b>₹ {{valueToDisplay2.Rate}}</b></td> -->
+                </tr>
+                <tr>
+                  <td align="left">Occupied Slot - <b>{{valueToDisplay2.Occupied}}</b></td>
+                  <td align="right">Occupied Advance Slot - <b>{{valueToDisplay2.occupied_advance_slot}}</b></td>
+                  <!-- <td align="right"><span class="pull-right d-block">Entry</span> <img src="../../assets/imgs/check1.png" class="pull-right ml-5"></td> -->
+                </tr>
+                <tr>
+                  <td align="left"><img src="../../assets/imgs/arrow2.png"></td>
+                  <td align="right"><span class="pull-right d-block"><b>Entry</b></span> <img src="../../assets/imgs/check1.png" class="pull-right ml-5"></td>
+                </tr>
+              </table>
+            </ion-card-content>
+          </ion-card>
+
+          <ion-card (click)="exitVehicle()">
+            <ion-card-content class="card-bg">
+              <table class="table text-uppercase my-14">
+                <tr>
+                    <td rowspan="2"><img src="../../assets/imgs/arrow1.png" class="width-19"></td>                  
+                  <td align="left"><b>EXIT VEHICLE</b></td>
+                  <td align="right"><span class="pull-right d-block">EXIT</span> <img src="../../assets/imgs/check2.png" class="pull-right ml-5"></td>
+                </tr>
+              </table>
+            </ion-card-content>
+          </ion-card>
+
+      </div>
+      <div>
+        <button class="buttonMargin" ion-button full round (click)="refreshData()">Refresh</button>
+      </div>
+    </ion-item>
+
+
+
+  </ion-list>
+</ion-content>

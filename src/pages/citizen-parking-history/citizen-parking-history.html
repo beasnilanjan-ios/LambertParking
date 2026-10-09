@@ -1,0 +1,63 @@
+<!-- <ion-header *ngIf="!isSelectedFormSideMenu">
+  <ion-navbar>
+    <ion-title text-center>Lambert Parking</ion-title>
+  </ion-navbar>
+</ion-header> -->
+
+<ion-header >
+  <ion-navbar>
+    <button class="custom-nav-icon" ion-button menuToggle>
+      <ion-icon name="navbar"></ion-icon>
+    </button>
+    <ion-title text-center>Lambert Parking</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content no-padding no-margin>
+  <div text-center>
+    <h3>History</h3>
+    <hr>
+  </div>
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <div class="fild-input col-7">
+          <div class="form-control">
+            <ion-input placeholder="Mobile Number" (keyup.enter)="hideKeyboard()" [(ngModel)]="tempmobile" type="tel" maxlength="10" pattern="[0-9]+"></ion-input>
+          </div>
+        </div>
+        <div class="col-3">
+            <button ion-button outline class="menu-btn btn-dark mt-20 float-right" (click)="btnDone()" color="light" round small>Done</button>
+        </div>                            
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  <ion-list no-padding no-margin>
+    
+    <ion-card *ngFor="let item of historyArray">
+      <div class="row">
+        <div class="col-4">
+          <img src="../../assets/imgs/history.png">
+        </div>
+        <div class="col-8">
+          <h1>{{item.vehicle_number}}</h1>
+          <div><b> Vehicle Type: </b>{{item.vehicle_type}}</div>
+          <div><b> Mobile: </b>{{item.mobile}}</div>
+          <!-- <div><b> Location: </b>{{item.area_name}}</div> -->
+          <div><b> Location: </b>{{item.location}}</div>
+          <div><b> Entry Time: </b>{{item.entry_time}}</div>
+          <div><b> Exit Time: </b>{{item.exit_time}}</div>
+          <div><b> Fare: </b>{{item.fare}}</div>
+        </div>
+      </div>
+      <ion-item>
+        <!-- <ion-avatar item-start> -->
+        <!-- <ng-template><img src="../../assets/imgs/history.png"></ng-template> -->
+        <!-- </ion-avatar>     -->
+
+
+      </ion-item>
+    </ion-card>
+  </ion-list>
+</ion-content>

@@ -1,0 +1,79 @@
+page-login {
+    .list-md .item-input:last-child {
+        border-bottom: 0;
+    }
+    .item-inner {
+        border-bottom: 1px solid #dedede!important;
+    }.item-md {
+        background: transparent;
+        padding-left: 0;
+    }
+    .text-input {
+        color: black;
+    }
+    // For remember me 
+    .float-left {
+        float: left;
+    }
+    .remember-text {
+        padding: 4px;
+        margin: 0;
+        font-size: 12px;
+        float: left;
+    }
+    .fild-input .form-control {
+        border: 1px solid #ccc;
+        padding: 0;
+        background: transparent;
+        height: 4rem;
+        border-radius: 64px;
+        margin: 20px 0;
+        width: 100%;
+        min-height: 4rem;
+    }
+    .check-remeber {
+        margin: 20px 0;
+        min-height: 20px;
+    }
+    .log-btn button {
+        background: #ff970b;
+        height: 4rem;
+    }
+    input:-internal-autofill-selected {
+        background: transparent!important;
+    }
+    .fild-input .form-control input {
+        padding: 11px;
+        width: 100%;
+        margin: 0;
+    }
+    .text-input {
+        color: black;
+    }
+    .fild-input h3 {
+        margin-bottom: 20%;
+    }
+
+    .remember-me{
+        color: white;
+        background-color: transparent;
+        font-size: 15px;
+        float: left;
+         margin-top: 20px;
+        margin-bottom: 30px;
+        //padding-top: 20px;
+        padding-top: 0px;
+    }
+    .sign-up {
+        color: black;
+        background-color: transparent;
+        font-size: 15px;
+        padding-top: 0px;
+        margin-top: 20px;
+        margin-bottom: 30px;
+        font-weight: bold;
+        //float: right;
+        
+    }
+    
+}

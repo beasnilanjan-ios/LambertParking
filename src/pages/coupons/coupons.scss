@@ -1,0 +1,60 @@
+page-coupons {
+
+    .ion-ios-navbar,.ion-md-navbar {
+        content: url('../../assets/icon/nav-bar.png');
+        width: 32px;
+        height: 32px;
+        padding: 6px 4px 2px;
+        opacity: 0.9;
+    }
+
+    .empty-message p {
+        color: #666;
+        font-size: 15px;
+        margin-top: 24px;
+    }
+
+    .coupon-card {
+        width: 100%;
+        padding: 8px 0;
+        font-size: 14px;
+        line-height: 1.6;
+    }
+
+    .coupon-token {
+        color: #034083;
+        font-size: 18px;
+        font-weight: bold;
+        margin-bottom: 10px;
+        word-break: break-word;
+    }
+
+    .coupon-route {
+        background: #ff970b;
+        color: #fff;
+        padding: 8px 12px;
+        margin-bottom: 10px;
+        border-radius: 4px;
+        font-size: 13px;
+    }
+
+    .coupon-address {
+        color: #333;
+        word-break: break-word;
+        white-space: normal;
+
+        b {
+            display: block;
+            margin-bottom: 4px;
+        }
+
+        span {
+            display: block;
+            line-height: 1.5;
+        }
+    }
+
+    ion-card {
+        margin: 10px 12px;
+    }
+}

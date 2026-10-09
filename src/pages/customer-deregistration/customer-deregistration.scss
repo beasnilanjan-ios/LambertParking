@@ -1,0 +1,18 @@
+page-customer-deregistration {
+    
+    .ion-ios-navbar,.ion-md-navbar {
+        content: url('../../assets/icon/nav-bar.png');
+        width: 32px;
+        height: 32px;
+        padding: 6px 4px 2px;
+        opacity: 0.9;
+      }
+      .mt-15{
+        margin-top: 25px;
+    }
+    .logout-btn button {
+        background: #ff970b;
+        height: 4rem;
+    }
+
+}

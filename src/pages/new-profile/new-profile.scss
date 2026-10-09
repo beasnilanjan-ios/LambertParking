@@ -1,0 +1,36 @@
+page-new-profile {
+    .list-md .item-input:last-child {
+        border-bottom: 0;
+    }
+    .item-inner {
+        border-bottom: 1px solid #dedede!important;
+    }.item-md {
+        background: transparent;
+        padding-left: 0;
+    }
+    .text-input {
+        color: white;
+    }
+    .myCustomSelect{
+        max-width: 100%;
+        background: #fff;
+        border: 2px solid grey;
+        border-radius: 5px;
+        width: 100%;
+    }
+    .grid {
+        padding: 0;
+    }
+    img.add-btn {
+        float: right;
+    }
+    .terms-n-condition{
+        color: white;
+        background-color: transparent;
+        font-size: 15px;
+        float: left;
+         margin-top: 20px;
+        margin-bottom: 30px;
+        padding-top: 20px;
+    }
+}

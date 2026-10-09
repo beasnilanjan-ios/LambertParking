@@ -1,0 +1,211 @@
+page-parking-zone {
+    .myCustomSelect{
+        max-width: 100%;
+        background: #fff;
+        border: 2px solid grey;
+        border-radius: 5px;
+        width: 100%;
+    }    
+    .item-md {
+        background: linear-gradient(to bottom, rgba(255,255,255,0.5) 0%,rgba(255,255,255,0.5) 100%);
+    }
+    .item-ios {
+        background: linear-gradient(to bottom, rgba(255,255,255,0.5) 0%,rgba(255,255,255,0.5) 100%);
+    }
+    .align-center {
+        text-align: center;
+    }
+    // .align-center button {
+    //     min-height: 36px;
+    //     line-height: 36px;
+    // }
+    .custom-table1 {
+        border-collapse: collapse;
+        border-spacing: 0;
+        width: 100%;
+        margin-bottom: 15px;
+    }
+    .custom-table1, .custom-table1 thead tr th {
+        font-size: 11px;
+    }
+    .custom-table1, .custom-table1 thead tr th, .custom-table1 tbody tr td {
+        border: 1px solid #ddd;
+        text-align: center;
+        padding: 1px;
+        font-size: 12px;
+    }
+
+    .custom-table2 {
+        border-collapse: collapse;
+        border-spacing: 0;
+        width: 100%;
+        border: 0;
+        margin-bottom: 0;
+    }
+    .custom-table2, .custom-table2 thead tr th, .custom-table2 tbody tr td {
+        border-bottom: 1px solid #ddd;
+        text-align: center;
+        padding: 7px;
+    }
+    .card-md {
+        margin: 10px 1px;
+    }
+    .card-md {
+        width: calc(100% - 2px);
+    }
+    .card-ios {
+        margin: 10px 1px;
+    }
+    .card-ios {
+        width: calc(100% - 2px);
+    }
+    // span.button-inner {
+    //     font-size: 13px;
+    //     text-transform: capitalize;
+    // }
+    .item-md {
+        padding-left: 0;
+    }
+    .item-ios {
+        padding-left: 0;
+    }
+    .item-md.item-block .item-inner {
+        padding-right: 0;
+    }
+    .item-ios.item-block .item-inner {
+        padding-right: 0;
+    }
+    // .buttonMargin {
+    //     margin-top: 0;
+    // }
+    .card-content-md {
+        padding: 0px;
+    }
+    .card-content-ios {
+        padding: 0px;
+    }
+    .label-md {
+        margin: 13px 0;
+    }
+    .label-ios {
+        margin: 13px 0;
+    }
+    .power-btn {
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        left: 30px;
+        top: 30%;
+    }
+    // .button-round-ios {
+    //     width: 50px;
+    //     text-align: center;
+    // }
+    // span.button-inner {
+    //     font-size: 12px;
+    // }
+
+    table.table {
+        width: 100%;
+    }
+    .card-bg {
+        background: linear-gradient(to right, #87e0fd 0%,#8a8c8a 0%,#238f10 100%);
+        padding: 7px;
+        min-height: 70px;
+        color: #fff;
+    }
+    table.table tr td {
+        padding: 4px;
+        margin: 0;
+        vertical-align: middle;
+        text-align: center;
+        font-size: 13px;
+    }
+    table.table tr td span {
+        font-weight: bold;
+        display: block;
+        font-size: 20px;
+    }
+    .text-uppercase {
+        text-transform: uppercase;
+    }
+    table.table tr td span.font-size-30 {
+        font-size: 16px;
+        line-height: 22px;
+    }
+    table.table tr td span.font-size-10 {
+        font-size: 9px;
+    }
+    table.table tr td.vertical-align-bottom {
+        vertical-align: bottom;
+    }
+    .card-bg.card-bg-red {
+        background: linear-gradient(to right, #87e0fd 0%,#8a8c8a 0%,#fa4e06 100%);
+        padding: 16px 7px;
+    }
+    em.text-down {
+        font-style: normal;
+        font-size: 18px;
+    }
+    .mt-m15 {
+        margin-top: -15px;
+    }
+    .myCustomSelect {
+        border-radius: 64px;
+    }
+    table.table.text-uppercase tbody tr td {
+        text-align: left;
+        color: #000;
+    }
+    table.table.text-uppercase tbody tr td:nth-child(3) {
+        text-align: right;
+    }
+    .card-bg, .card-bg.card-bg-red {
+        background: white;
+    }
+    .card {
+        border-radius: 8px;
+    }
+    table.table tr td span {
+        color: #000;
+    }
+    button.buttonMargin, .item-button {
+        background: #ff970b;
+        height: 4rem;
+    }
+    table.table tr td {
+        color: #000;
+    }
+    table.my-14 {
+        margin-top: 14px;
+        margin-bottom: 14px;
+    }
+    table.table.text-uppercase img {
+        width: inherit;
+    }
+    .ml-5 {
+        margin-right: 5px;
+    }
+    .pull-right {
+        float: right;
+    }
+    .d-block {
+        display: block;
+    }
+    table.table tr td span {
+        font-weight: normal;
+        display: block;
+        font-size: inherit;
+    }
+    img.width-19 {
+        width: 19px!important;
+    }
+    .btnViewPlan {
+        background: cornflowerblue;
+    }
+    .empty-list-msg {
+        color: #c0392b;
+        font-size: 13px;
+        margin: 8px 0 0;
+    }
+}

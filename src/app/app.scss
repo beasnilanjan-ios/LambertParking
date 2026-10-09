@@ -14,3 +14,210 @@
 // To declare rules for a specific mode, create a child rule
 // for the .md, .ios, or .wp mode classes. The mode class is
 // automatically applied to the <body> element in the app.
+.imgLogo {
+    padding-top: 90px;
+    padding-bottom: 30px;
+}    
+
+.labelColorRed {
+    color: red;
+    padding: 8px;
+}
+
+.labelFont {
+    font-size: 15px;
+  }
+
+.fontBold{
+      font-weight: bold;
+}  
+
+.bg-image {
+    background-image: url('../../assets/imgs/backgroundImage.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.header button.back-button.bar-button.bar-button-md.back-button-md.bar-button-default.bar-button-default-md.show-back-button {
+    position: absolute;
+    z-index: 999;
+}
+
+button{
+    min-height: 36px;
+}
+
+ion-title{
+    text-align: center;
+}
+
+.align-center {
+    text-align: center;
+}
+.align-center img {
+    cursor: pointer;
+    max-height: 150px;
+    margin-top: 50px;
+}
+.buttonMargin{
+    margin-top: 20px;
+}
+.item {
+    background: transparent;
+}
+//Css header
+// .toolbar-background {
+// background: linear-gradient(to right, #87e0fd 0%,#53cbf1 0%,#0a80cd 100%);
+// }
+
+//for side menu
+.ion-ios-menu_booking_history,.ion-md-menu_booking_history {
+    // content: url('../assets/icon/menuIcon/k-log-out.png');
+    content: url('../assets/icon/Booking-History.png');
+    width: 32px;
+    height: 32px;
+    padding: 6px 4px 2px;
+    opacity: 1.0;
+}
+
+.ion-ios-menu_contact_us,.ion-md-menu_contact_us {
+    // content: url('../assets/icon/menuIcon/k-log-out.png');
+    content: url('../assets/icon/Contact-Us.png');
+    width: 32px;
+    height: 32px;
+    padding: 6px 4px 2px;
+    opacity: 1.0;
+}
+
+.ion-ios-menu_coupons,.ion-md-menu_coupons {
+    // content: url('../assets/icon/menuIcon/k-log-out.png');
+    content: url('../assets/icon/Coupons.png');
+    width: 32px;
+    height: 32px;
+    padding: 6px 4px 2px;
+    opacity: 1.0;
+}
+
+.ion-ios-menu_deregistration,.ion-md-menu_deregistration {
+    // content: url('../assets/icon/menuIcon/k-log-out.png');
+    content: url('../assets/icon/De-registration.png');
+    width: 32px;
+    height: 32px;
+    padding: 6px 4px 2px;
+    opacity: 1.0;
+}
+
+.ion-ios-menu_logout,.ion-md-menu_logout {
+    // content: url('../assets/icon/menuIcon/k-log-out.png');
+    content: url('../assets/icon/Logout.png');
+    width: 32px;
+    height: 32px;
+    padding: 6px 4px 2px;
+    opacity: 1.0;
+}
+
+.ion-ios-menu_change_password,.ion-md-menu_change_password {
+    // content: url('../assets/icon/menuIcon/k-log-out.png');
+    content: url('../assets/icon/Password.png');
+    width: 32px;
+    height: 32px;
+    padding: 6px 4px 2px;
+    opacity: 1.0;
+}
+
+.ion-ios-menu_support,.ion-md-menu_support {
+    // content: url('../assets/icon/menuIcon/k-log-out.png');
+    content: url('../assets/icon/Suport.png');
+    width: 32px;
+    height: 32px;
+    padding: 6px 4px 2px;
+    opacity: 1.0;
+}
+
+.ion-ios-menu_termsncondn,.ion-md-menu_termsncondn {
+    // content: url('../assets/icon/menuIcon/k-log-out.png');
+    content: url('../assets/icon/Terms.png');
+    width: 32px;
+    height: 32px;
+    padding: 6px 4px 2px;
+    opacity: 1.0;
+}
+
+.ion-ios-menu_home,.ion-md-menu_home {
+    // content: url('../assets/icon/menuIcon/k-log-out.png');
+    content: url('../assets/icon/home.png');
+    width: 32px;
+    height: 32px;
+    padding: 6px 4px 2px;
+    opacity: 1.0;
+}
+
+.ion-ios-menu_exit,.ion-md-menu_exit {
+    // content: url('../assets/icon/menuIcon/k-log-out.png');
+    content: url('../assets/icon/exit.png');
+    width: 32px;
+    height: 32px;
+    padding: 6px 4px 2px;
+    opacity: 1.0;
+}
+
+// Google Maps InfoWindow content (rendered outside Ionic component tree)
+.iw-popup {
+    position: relative;
+    background: #fff;
+}
+
+.iw-popup-header {
+    position: relative;
+    background: #fff;
+    height: 28px;
+    min-height: 28px;
+}
+
+.iw-close-btn {
+    position: absolute;
+    top: 2px;
+    right: 8px;
+    z-index: 2;
+    background: transparent;
+    border: none;
+    color: #666;
+    font-size: 22px;
+    font-weight: bold;
+    line-height: 1;
+    cursor: pointer;
+    padding: 0 4px;
+}
+
+.iw-advance-booking-wrap {
+    text-align: center;
+    padding: 8px 12px 12px;
+}
+
+.iw-advance-booking-btn {
+    border: none;
+    border-radius: 4px;
+    padding: 10px 16px;
+    font-size: 14px;
+    font-weight: bold;
+    width: 100%;
+    color: #fff;
+}
+
+.iw-advance-booking-loading {
+    background: #6c757d;
+    cursor: default;
+    opacity: 0.85;
+}
+
+.iw-advance-booking-available {
+    background: #28a745;
+    cursor: pointer;
+}
+
+.iw-advance-booking-full {
+    background: #dc3545;
+    cursor: not-allowed;
+    opacity: 0.9;
+}

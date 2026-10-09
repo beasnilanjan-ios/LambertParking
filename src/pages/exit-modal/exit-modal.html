@@ -1,0 +1,41 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title><u>Parking Charges</u></ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+  <div><b>Base Fare: ₹ </b>{{baseFare}}</div>
+  <div><b>GST Percentage (%): </b>{{gstPercentage}}</div>
+  <div><b>GST Amount (₹): </b>{{gstAmount}}</div>
+  <div><b>Total Fare: ₹ </b>{{fare}}</div>
+  <div><b>Vehicle Type: </b>{{vehicleType}}</div>
+  <div><b>Total Time: </b>{{totalTime}}</div>
+  <div><b>Token no.: </b>{{token_no}}</div>
+
+  <ion-item> 
+    <ion-label floating>Coupon Code</ion-label>
+    <ion-input (keyup.enter)="hideKeyboard()" type="number" [(ngModel)]="couponCode"></ion-input>
+  </ion-item>
+  <ion-item> 
+    <ion-label floating>Amount</ion-label>
+    <ion-input (keyup.enter)="hideKeyboard()" type="number" [(ngModel)]="fare"></ion-input>
+  </ion-item>  
+
+  <ion-item no-lines>
+      <div>
+        <ion-grid>
+          <ion-row>
+            <ion-col>
+              <div><button color="danger" class="buttonMargin" ion-button full round (click)="cancel()">Cancel</button>
+              </div>
+            </ion-col>
+            <ion-col>
+              <div><button class="buttonMargin" ion-button full round (click)="done()">Confirm</button></div>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      </div>
+    </ion-item>
+</ion-content>

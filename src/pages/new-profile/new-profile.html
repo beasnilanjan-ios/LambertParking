@@ -1,0 +1,114 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>New Profile</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding class="bg-image">
+  <ion-list>
+      <div>
+          <h3 text-center style="color: #fff; margin-top: 50px;">Sign Up</h3>
+      </div>
+    <ion-item> 
+      <ion-label floating>Name</ion-label>
+      <ion-input (keyup.enter)="hideKeyboard()" [(ngModel)]="dataToSend.name"></ion-input>
+    </ion-item>
+    <ion-item> 
+      <ion-label floating>Address</ion-label>
+      <ion-input (keyup.enter)="hideKeyboard()" [(ngModel)]="dataToSend.address"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label floating>Contact Number</ion-label>
+      <ion-input (keyup.enter)="hideKeyboard()" [(ngModel)]="dataToSend.mobile_no" type="tel" maxlength="10" pattern="[0-9]+"></ion-input>
+    </ion-item>
+    <!-- <ion-item> 
+      <ion-label floating>Gender</ion-label>
+      <ion-input [(ngModel)]="dataToSend.gender"></ion-input>
+    </ion-item> (ionChange)="genderChange($event)" class="myCustomSelect" style="margin-top: 25px;" -->
+   <!-- <ion-item >
+      <ion-label floating>Gender</ion-label>
+      <ion-select  [(ngModel)]="dataToSend.gender" style="color:white;" interface="action-sheet">
+        <ion-option value="Female">Female</ion-option>
+        <ion-option value="Male">Male</ion-option>
+      </ion-select>
+    </ion-item>-->
+    <ion-item> 
+      <ion-label floating>Email Id</ion-label>
+      <ion-input  input type="email" (keyup.enter)="hideKeyboard()" [(ngModel)]="dataToSend.email"></ion-input>
+    </ion-item>
+        <!-- Primary -->
+       <!-- <ion-grid>
+            <ion-row>
+              <ion-col col-6>
+                <ion-item>
+                  <ion-label floating>Vehicle Number</ion-label>
+                  <ion-input autocapitalize="characters" (keyup.enter)="hideKeyboard()" [(ngModel)]="vehicleNo" maxlength="10" (keydown.space)="$event.preventDefault()"></ion-input>
+                </ion-item>
+              </ion-col>
+              <ion-col col-6>
+                  <ion-item>
+                    <ion-label floating>Vehicle Type</ion-label>
+                    <ion-select style="color:white;" interface="action-sheet" [(ngModel)]="vehicleType">
+                      <ion-option value="2 Wheeler">2 Wheeler</ion-option>
+                      <ion-option value="4 Wheeler">4 Wheeler</ion-option>
+                    </ion-select>
+                </ion-item>
+              </ion-col>
+            </ion-row>
+    </ion-grid>
+       
+    <ion-grid *ngFor="let att of dataToSend.vehicleArray; let idx = index">
+            <ion-row>
+              <ion-col col-6>
+                <ion-item>
+                  <ion-label floating>Vehicle Number</ion-label>
+                  <ion-input autocapitalize="characters" (keyup.enter)="hideKeyboard()" [(ngModel)]="dataToSend.vehicleArray[idx].vehicleNo" maxlength="10" (keydown.space)="$event.preventDefault()"></ion-input>
+                </ion-item>
+              </ion-col>
+              <ion-col col-6>
+                  <ion-item>
+                    <ion-label floating>Vehicle Type</ion-label>
+                    <ion-select  [(ngModel)]="dataToSend.vehicleArray[idx].vehicleType" style="color:white;" interface="action-sheet">
+                      <ion-option value="2 Wheeler">2 Wheeler</ion-option>
+                      <ion-option value="4 Wheeler">4 Wheeler</ion-option>
+                    </ion-select>
+                </ion-item>
+              </ion-col>
+            </ion-row>
+    </ion-grid>
+    <ion-grid>
+              <ion-row>
+                  <ion-col col-10>
+                  </ion-col>
+                <ion-col col-1>
+                    <img src="../../assets/imgs/add.png" style="width:30px; margin: 10px 0 0 0;" class="add-btn" (click)="btnAdd()">
+                </ion-col>
+                <ion-col col-1>
+                    <img src="../../assets/imgs/remove.png" style="width:30px; margin: 10px 0 0 0;" class="add-btn" (click)="btnRemove()">
+                </ion-col>
+              </ion-row>
+    </ion-grid>    --> 
+    
+    <!-- <ion-item *ngFor="let att of anArray; let idx = index">
+        <ion-label style="color:white;">{{att.label}}{{idx+1}}</ion-label>
+        <ion-input type="text"  text-right  [(ngModel)]="anArray[idx].value"></ion-input>
+    </ion-item>
+    <button ion-button   (click)="Add()">Add More</button>
+    <button ion-button full  (click)="goTo()" >let's go</button>
+   
+   <ion-card>
+    <ion-item *ngFor="let att of anArray;">
+      <div class="card-title">{{att.value}}</div>
+    </ion-item>
+   </ion-card> -->
+
+<div class="terms-n-condition" style="background-color: transparent;">
+    <ion-checkbox [(ngModel)]="isSelectedTermsNCond"[checked]="isSelectedTermsNCond"></ion-checkbox>
+    <ion-label style="float: right; color: #488aff;
+      display: contents;" (click) ="goToTermsNCondPage()">I agree to the <span style="color: #488aff">terms & conditions</span></ion-label>
+</div>
+    
+  </ion-list>
+  <button class="buttonMargin" ion-button full round [disabled]="!isSelectedTermsNCond" (click)="signup()">Sign Up</button>
+</ion-content>

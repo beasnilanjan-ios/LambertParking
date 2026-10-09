@@ -1,0 +1,71 @@
+// export const ApiConstant = {
+//   MainApi: 'http://182.73.216.94:8091/webservice/',
+//   //MainApi: 'http://192.168.1.144:8082/webservice/',
+//     // MainApi: 'http://beas.in/lambert/webservice/',    //---STAGING
+//     //=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+//     Login: 'login',
+//     UserParking: 'users_parking/',
+//     AreaParkingListApi: 'area_parking_list/',
+//     MapSpaceApi: 'parkingspace_list',
+//     ParkingEntryApi: 'parking_entry',
+//     ParkedVehicles:'vendor_parkedvehicle_list',
+//     ExitVehicle:'parking_exit',
+//     CalculateFareApi:'calculate_fare',
+//     CitizenCheckApi:'citizenMobCheck',
+//     CitizenSignupApi:'citizenSignup',
+//     CitizenLoginApi:'citizenLogin',
+//     CitizenDeRegistrationApi:'deregister_citizen',
+//     LambertAddress:'get_lambert_address',
+//     TermsAndConditions:'get_terms_n_cond',
+//     CitizenForgotPasswordApi:'forgot_password',
+//     CitizenChangePasswordApi:'change_password',
+//     AttendantForgotPasswordApi:'attendent_forgot_password',
+//     ParkingHistoryApi:'citizen_parking_history/',
+//     CitizenAdApi: 'get_advertisements_list',
+//    // OCRApi:'http://192.168.1.144:8082/webservice/getOCR',
+//     OCRApi:'http://182.73.216.94:8091/webservice/getOCR',
+//     OCRMobileNoApi:'getOcrMob/',
+//     GetParkingDetails:'get_parking_details/',
+//     ValidateLoggedInUser:'attendent_status/',
+//     GetViewPlan:'view_parking_plan/',
+//     CheckAdvanceBookingApi: 'check_advance_booking_request',
+//     AdvanceBookingApi: 'advance_booking_request',
+//     AdvanceBookingTokenApi: 'advance_booking_token'
+// }
+
+
+export const ApiConstant = {
+  MainApi: 'http://182.73.216.94/lambert.beas.in/webservice/',
+  //MainApi: 'http://192.168.1.144:8082/webservice/',
+    // MainApi: 'http://beas.in/lambert/webservice/',    //---STAGING
+    //=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+    Login: 'login',
+    UserParking: 'users_parking/',
+    AreaParkingListApi: 'area_parking_list/',
+    MapSpaceApi: 'parkingspace_list',
+    ParkingEntryApi: 'parking_entry',
+    ParkedVehicles:'vendor_parkedvehicle_list',
+    ExitVehicle:'parking_exit',
+    CalculateFareApi:'calculate_fare',
+    CitizenCheckApi:'citizenMobCheck',
+    CitizenSignupApi:'citizenSignup',
+    CitizenLoginApi:'citizenLogin',
+    CitizenDeRegistrationApi:'deregister_citizen',
+    LambertAddress:'get_lambert_address',
+    TermsAndConditions:'get_terms_n_cond',
+    CitizenForgotPasswordApi:'forgot_password',
+    CitizenChangePasswordApi:'change_password',
+    AttendantForgotPasswordApi:'attendent_forgot_password',
+    ParkingHistoryApi:'citizen_parking_history/',
+    CitizenAdApi: 'get_advertisements_list',
+   // OCRApi:'http://192.168.1.144:8082/webservice/getOCR',
+    OCRApi:'http://182.73.216.94/lambert.beas.in/webservice/getOCR',
+    OCRMobileNoApi:'getOcrMob/',
+    GetParkingDetails:'get_parking_details/',
+    ValidateLoggedInUser:'attendent_status/',
+    GetViewPlan:'view_parking_plan/',
+    CheckAdvanceBookingApi: 'check_advance_booking_request',
+    AdvanceBookingApi: 'advance_booking_request',
+    AdvanceBookingTokenApi: 'advance_booking_token'
+}
+ 

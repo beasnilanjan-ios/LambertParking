@@ -1,0 +1,61 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title text-center>Lambert Parking</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content>
+  <ion-fab right bottom> <!--Fab button size is adjusted in variable.scss-->
+    <button ion-fab (click)="btnGateOpen()">Gate Open</button>
+  </ion-fab>
+  <div text-center>
+    <h3>{{location}}</h3>
+  </div>
+  <ion-list>
+    <ion-item class="pl-0">
+      <!--(onAddressChange)="handleAddressChange($event)"-->
+      <div>
+        <ion-searchbar class="searchCss" (keyup.enter)="hideKeyboard()" placeholder="Search with vehicle number"
+          [(ngModel)]="preFilterVehicleNumber" (ionInput)="filterItems($event)"></ion-searchbar>
+      </div>
+    </ion-item>
+    <ion-card *ngFor="let item of filterVehicle">
+      <ion-item>    
+          <ion-avatar item-start>          
+              <div><img src="../../assets/imgs/Licon.png"></div>          
+          </ion-avatar>      
+        <!-- <ion-avatar item-start>                   
+          <div *ngIf="item.vehicle_type == '2Wheeler'"><img src="../../assets/imgs/bike.png"></div>
+          <div *ngIf="item.vehicle_type == '4Wheeler'"><img src="../../assets/imgs/car.png"></div>
+          <div *ngIf="item.vehicle_type == 'Bus'"><img src="../../assets/imgs/truck.png"></div>          
+        </ion-avatar> -->
+        <h1>{{item.vehicle_number | uppercase}}</h1>
+        <div><b> Vehicle Type: </b>{{item.vehicle_type}}</div>
+        <div><b> Mobile: </b>{{item.mobile}}</div>
+        <div><b> Start Time: </b>{{item.entry_time}}</div>
+        <div><b> Type: </b>{{item.type}}</div>
+        <div class="float-left width-half mr-5"><button class="buttonMargin btn-exit" ion-button small (click)="exit(item)">Exit</button></div>
+        <div class="float-left" *ngIf="item.type == 'Normal'"><button class="buttonMargin btn-warning" ion-button small (click)="exemptedVehicle(item)">Exempted ?</button>
+        </div>
+
+        <!-- <div >
+      <input type="checkbox" onclick="selectMember()"/> Exempted Vehicle ?
+    </div> -->
+      </ion-item>
+
+      <!-- <ion-grid class="py-20">
+        <ion-row>
+          <ion-col>
+            <ion-checkbox class="float-left" color="primary" (ionChange)="selectMember()"></ion-checkbox>
+            <ion-label>Exempted Vehicle ?</ion-label>
+          </ion-col>
+        </ion-row>
+      </ion-grid> -->
+
+      <!-- <img src="https://maps.googleapis.com/maps/api/staticmap?center={{item.area}}&zoom=15&size=600x300&maptype=roadmap
+    &&markers=color:blue%7Clabel:S%7C22.5185249,88.3643219&key=AIzaSyARdeJpofofSkZIy0-xPRHD74_n9bafaI8"/> -->
+    </ion-card>
+    
+  </ion-list>
+</ion-content>

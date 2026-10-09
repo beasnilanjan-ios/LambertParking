@@ -1,0 +1,29 @@
+<!--
+  Generated template for the LogoutPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+    <ion-navbar>
+      <button class="custom-nav-icon" ion-button menuToggle>
+        <ion-icon name="navbar"></ion-icon>
+      </button>
+      <ion-title text-center>Logout</ion-title>
+    </ion-navbar>
+  </ion-header>
+  
+  <ion-content padding >
+    <div>
+      <h1 style="color:black; text-align: center;">Are you sure you want to log out now?</h1>
+      <ion-grid class="logout-btn">
+          <ion-row>
+            <ion-col>
+                <button class="buttonMargin mt-15"  ion-button full round (click)="btnYes()">Yes</button>
+            </ion-col>
+            <ion-col>
+                <button class="buttonMargin mt-15"  ion-button full round (click)="btnNo()">No</button>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+    </div>

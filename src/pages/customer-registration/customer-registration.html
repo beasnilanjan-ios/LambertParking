@@ -1,0 +1,50 @@
+<!--
+  Generated template for the CustomerRegistrationPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <ion-navbar>
+    <ion-title>New Profile</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<!--<ion-content padding class="bg-image">-->
+<ion-content padding>
+  <ion-list>
+    <div>
+      <h3 text-center style="color: black; margin-top: 50px;">Sign Up</h3>
+    </div>
+    <ion-item>
+      <ion-label floating style="color: black;">Name</ion-label>
+      <ion-input (keyup.enter)="hideKeyboard()" [(ngModel)]="dataToSend.name"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label floating style="color: black;">Address</ion-label>
+      <ion-input (keyup.enter)="hideKeyboard()" [(ngModel)]="dataToSend.address"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label floating style="color: black;">Contact Number</ion-label>
+      <ion-input (keyup.enter)="hideKeyboard()" [(ngModel)]="dataToSend.mobile_no" type="tel" maxlength="10" pattern="[0-9]+"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label floating style="color: black;">Email Id</ion-label>
+      <ion-input input type="email" (keyup.enter)="hideKeyboard()" [(ngModel)]="dataToSend.email"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label floating style="color: black;">Password</ion-label>
+      <ion-input input type="email" (keyup.enter)="hideKeyboard()" [(ngModel)]="dataToSend.password"></ion-input>
+    </ion-item>
+    <div class="terms-n-condition" style="background-color: transparent;">
+      <ion-checkbox [(ngModel)]="isSelectedTermsNCond" [checked]="isSelectedTermsNCond"></ion-checkbox>
+      <ion-label style="float: right; display: contents;" (click)="OpenBrowser()">I agree to Lambert Parking <span style="color: #488aff">Terms & Conditions</span></ion-label>
+    </div>
+  </ion-list>
+
+  <div class="signup-btn">
+    <button class="buttonMargin" ion-button full round [disabled]="!isSelectedTermsNCond" (click)="signup()">Sign Up</button>
+  </div>
+  
+</ion-content>

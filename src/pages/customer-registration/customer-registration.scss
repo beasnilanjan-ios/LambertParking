@@ -1,0 +1,27 @@
+page-customer-registration {
+    .item-inner .label {
+        //color: #fff;
+        color: black;
+
+    }
+    .item-block .item-inner {
+        //border-bottom: 1px solid #fff!important;
+        border-bottom: 1px solid black!important;
+    }
+    .terms-n-condition {
+        padding: 20px 0 0 15px;
+    }
+    .terms-n-condition .checkbox {
+        position: absolute;
+    }
+    .terms-n-condition .label {
+        padding-left: 20px!important;
+        display: block!important;
+        width: 100%;
+        margin: 0 0 20px 0;
+    }
+    .signup-btn button {
+        background: #ff970b;
+        height: 4rem;
+    }
+}

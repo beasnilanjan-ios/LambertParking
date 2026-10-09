@@ -1,0 +1,58 @@
+page-exit {
+    .py-10 {
+        padding: 10px 0;
+    }
+    .label-ios {
+        margin: 11px 0 11px 0;
+    }
+    .item-ios.item-block .item-inner {
+        padding-right: 0px;
+    }
+    // ::placeholder {
+    //     font-size: 10px;
+    // }
+    // .searchbar {
+    //     padding: 0;
+    // }
+    .searchbar-md, .searchbar-ios {
+        padding-right: 0;
+    }
+    .pl-0 {
+        padding-left: 0;
+    }
+    .label.label-md, .label.label-ios {
+        margin: 13px 0px 13px 0;
+    }
+    .float-left {
+        float: left;
+    }
+    .float-right {
+        float: right;
+    }
+    .pt-30 {
+        padding-top: 20px;
+    }
+    .buttonMargin {
+        margin-top: 10px!important;
+    }
+    .py-20.grid {
+        padding-left: 0;
+        padding-right: 0;
+        padding-bottom: 0;
+    }
+    .width-half {
+        width: 50%;
+    }
+    .width-half button {
+        width: 100%;
+    }
+    .mr-5 {
+        margin-right: 5px;
+    }
+    .btn-warning {
+        background-color: #ff970b;
+    }
+    .btn-exit {
+        background-color: #034083;
+    }
+}

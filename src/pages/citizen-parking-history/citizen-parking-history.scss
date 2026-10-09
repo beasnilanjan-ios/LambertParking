@@ -1,0 +1,70 @@
+page-citizen-parking-history {
+    .col-4 {
+        width: 30%;
+    }
+    .col-4 img {
+        width: 60px;
+        margin: 20px auto;
+        display: block;
+    }
+    .col-8 {
+        width: 70%;
+    }
+    .row {
+        padding: 15px 0 0 0;
+    }
+    .col-3 {
+        width: 30%;
+        float: left;
+    }
+    .col-7 {
+        width: 70%;
+        float: left;
+    }
+    .btn-dark {
+        background: #1185cf;
+        color: #fff;
+    }
+    .mt-20 {
+        margin-top: 20px;
+    }
+    .item-input-has-focus .label-ios[stacked],
+    .input-has-focus .label-ios[stacked],
+    .item-input-has-focus .label-ios[floating],
+    .input-has-focus .label-ios[floating] {
+        color: black;
+    }
+    .item-input-has-focus .label-md[stacked],
+    .input-has-focus .label-md[stacked],
+    .item-input-has-focus .label-md[floating],
+    .input-has-focus .label-md[floating] {
+        color: black;
+    }
+    .float-right {
+        float: right;
+    }
+    .fild-input .form-control {
+        border: 1px solid #ccc;
+        padding: 0;
+        background: transparent;
+        height: 4rem;
+        border-radius: 64px;
+        margin: 20px 0;
+        width: 100%;
+        min-height: 4rem;
+    }
+
+    .fild-input .form-control input {
+        padding: 11px;
+        width: 100%;
+        margin: 0;
+    }
+    .ion-ios-navbar,.ion-md-navbar {
+        content: url('../../assets/icon/nav-bar.png');
+        width: 32px;
+        height: 32px;
+        padding: 6px 4px 2px;
+        opacity: 0.9;
+      }
+
+}

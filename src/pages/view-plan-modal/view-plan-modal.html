@@ -1,0 +1,40 @@
+<ion-header>
+  <ion-navbar [hideBackButton]="true">
+    <ion-title text-center>Lambert Parking</ion-title>
+    <img src="../../assets/icon/back.png" (click)="done()" class="back-btn">
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content>
+  <div text-center>
+    <h3>{{vehicleType}}</h3>
+  </div>
+  <ion-list>
+    <ion-card *ngFor="let item of viewPlanArray">
+      <!--Scheme A-->
+      <ion-item *ngIf="item.scheme_id == '1'">
+        <div><b> Free Minutes: </b>{{item.free_minute}}</div>
+        <div><b> Upto (hh.mm): </b>{{item.from_hour}}</div>
+        <div><b> Upto Price (₹): </b>{{item.upto_price}}</div>
+        <div><b> Repeat Hour (h): </b>{{item.repeat_hour}}</div>
+        <div><b> Charge (₹): </b>{{item.charge}}</div>        
+      </ion-item>
+      <!--Scheme B-->
+      <ion-item *ngIf="item.scheme_id == '2'">
+        <div><b> Free Minutes: </b>{{item.free_minute}}</div>
+        <div><b> Upto (hh.mm): </b>{{item.from_hour}}</div>
+        <div><b> Upto Price (₹): </b>{{item.upto_price}}</div>
+      </ion-item>
+      <!--Scheme C-->
+      <ion-item *ngIf="item.scheme_id == '3'">
+        <div><b> Free Minutes: </b>{{item.free_minute}}</div>
+        <div><b> Repeat Hour (h): </b>{{item.repeat_hour}}</div>
+        <div><b>Charge (₹): </b>{{item.charge}}</div>        
+      </ion-item>
+    </ion-card>
+    <div *ngIf="disclaimer?.length > 0" style="color: red;">
+      <b>Note: {{this.disclaimer}}</b>
+    </div>
+  </ion-list>
+</ion-content>

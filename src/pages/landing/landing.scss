@@ -1,0 +1,21 @@
+page-landing {
+    .buttonTopPadding {
+        margin-top: 20px;
+    }
+    .position-fixed {
+        position: fixed;
+        bottom: 9%;
+        width: 91%;
+    }
+    .position-fixed button {
+        height: 4rem;
+        margin-top: 30px;
+    }
+    .position-fixed div button:nth-child(1) {
+        background: #ff970b;
+    }
+    .position-fixed div button:nth-child(2) {
+        background: #034083;
+    } 
+    
+}

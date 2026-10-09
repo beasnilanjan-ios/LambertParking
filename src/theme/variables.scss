@@ -38,14 +38,25 @@ $colors: (
   secondary:  #32db64,
   danger:     #f53d3d,
   light:      #f4f4f4,
-  dark:       #222
+  dark:       #222,
+  grey:       grey,
+  kawasaki:   #28A428,
+  ktm:        #ff970b,
+  yamaha:     #034083
 );
 
+$fab-size: 70px; //Change value to whatever size you want
 
 // App iOS Variables
 // --------------------------------------------------
 // iOS only Sass variables can go here
 
+// Loding Controller
+ion-loading.custom-loading-css {
+  .loading-wrapper {
+    color: #FF970B
+  }
+}
 
 
 
@@ -86,3 +97,15 @@ $colors: (
 
 @import "roboto";
 @import "noto-sans";
+
+$toolbar-background: #ffffff;
+
+//----PK21112018----//
+$label-ios-text-color: #999;
+$label-ios-text-color-focused: white;
+$label-md-text-color: #999;
+$label-md-text-color-focused: white;
+
+$item-ios-padding-start:0;
+$card-ios-margin-start:0;
+$card-ios-margin-end:0;

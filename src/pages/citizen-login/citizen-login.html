@@ -1,0 +1,36 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title text-center>Lambert Parking</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-list>
+    <div class="fild-input">
+      <h3 text-center style="color: black; margin-top: 50px;">Citizen Login</h3>
+      <div class="form-control">
+        <ion-input placeholder="Mobile Number" (keyup.enter)="hideKeyboard()" [(ngModel)]="data.phone" type="tel"
+          maxlength="10" pattern="[0-9]+"></ion-input>
+      </div>
+      <div class="form-control">
+        <ion-input placeholder="Password" (keyup.enter)="hideKeyboard()" type="password" [(ngModel)]="data.password">
+        </ion-input>
+      </div>
+      <!-- <div class="remember-me" style="background-color: transparent;">
+        <ion-checkbox  [(ngModel)]="data.rememberMe" [checked]="isRememberMe"></ion-checkbox>
+        <ion-label style="color: black; float: right;
+        display: contents;">Remember me?</ion-label>
+      </div> -->
+    </div>
+     <div style="background-color: transparent;" text-center>
+      <button class="sign-up" (click)="newRegistration()">Don't have an account? <span style="color: #488aff">Sign Up.</span></button>
+    </div>
+    <div style="background-color: transparent;" text-center>
+      <button class="sign-up" (click)="forgotPassword()"><span style="color: #488aff">Forgot password?</span></button>
+    </div>
+
+    <div class="log-btn">
+      <button class="buttonMargin" ion-button full round (click)="login()">Log In</button>
+    </div>
+  </ion-list>
+</ion-content>

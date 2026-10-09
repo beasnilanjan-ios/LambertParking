@@ -1,0 +1,80 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title text-center>Lambert Parking</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+  <!-- <ng-progress [min]="0" [max]="1"></ng-progress> -->
+  <!-- <img [src]="selectedImage" *ngIf="selectedImage"> -->
+  <!-- <ion-card *ngIf="imageText">
+      <ion-card-header>Vehicle Number</ion-card-header>
+      <ion-card-content>{{ imageText }}</ion-card-content>
+    </ion-card>  -->
+
+  <!-- (ionBlur)="inputChanged($event)" for mobile number corresponding to vehicle no.-->
+
+  <ion-list>
+    <!-- <div *ngIf="entryModel.vehicleType == '4Wheeler'">
+      <h3 text-center>4 Wheeler Entry</h3>
+      <hr>
+    </div>
+    <div *ngIf="entryModel.vehicleType == '2Wheeler'">
+      <h3 text-center>2 Wheeler Entry</h3>
+      <hr>
+    </div> -->
+    <div class="form-control">
+      <ion-input placeholder="Enter Token Number" (keyup.enter)="hideKeyboard()" [(ngModel)]="entryModel.token_no" autocapitalize="characters" maxlength="10" (keydown.space)="$event.preventDefault()"></ion-input>
+    </div>
+
+    <div class="form-control">
+      <!-- <ion-label floating>Enter Vehicle Number</ion-label> -->
+      <ion-input placeholder="Enter Vehicle Number" (keyup.enter)="hideKeyboard()" [(ngModel)]="entryModel.vehicle_number" autocapitalize="characters" maxlength="10" (keydown.space)="$event.preventDefault()"></ion-input>
+    </div>
+    <div class="position-relative">
+      <div class="border-1"></div>
+      <span>Or</span>
+    </div>
+    <div>
+      <button class="buttonMargin" ion-button full round (click)="ocrScan()">Auto Scan</button>
+    </div>
+    <!-- <ion-item>
+      <ion-label class="labelColor" primary><div>{{location}}</div></ion-label>      
+    </ion-item> -->
+    <!-- <ion-item> 
+      <ion-label class="labelColor" floating>Owner Name</ion-label>
+      <ion-input [(ngModel)]="entryModel.ownerName"></ion-input>
+    </ion-item> (ionChange)="inputChanged($event)"-->
+    <div class="form-control">
+      <!-- <ion-label class="labelColor" floating>Mobile Number</ion-label> -->
+      <ion-input placeholder="Mobile Number" (keyup.enter)="hideKeyboard()" [(ngModel)]="entryModel.mobile" type="tel" maxlength="10"
+        pattern="[0-9]+"></ion-input>
+    </div>
+    <!-- <ion-item>
+      <ion-label class="labelColor" primary>
+        <div>Time : {{formatDate}}</div>
+      </ion-label>
+    </ion-item> -->
+  </ion-list>
+
+  <ion-row>
+    <ion-col>
+      <div><button color="danger" class="buttonMargin" ion-button full round (click)="cancel()">Cancel</button>
+      </div>
+    </ion-col>
+    <ion-col>
+      <div><button class="buttonMargin btn-blue" ion-button full round (click)="done()">Done</button></div> <!--[disabled]="this.entrySuccess == true"-->
+    </ion-col>
+  </ion-row>
+
+  <ion-row style="margin-top: 30px;">
+    <ion-col>
+      <div class="print-btn-wrap"><img src="../../assets/icon/printer.png" (click)="btnPrint()" class="print-btn"></div>
+    </ion-col>
+    <ion-col>
+      <div class="print-btn-wrap"><img src="../../assets/icon/gate.png" (click)="btnGateOpen()" class="print-btn"></div>
+    </ion-col>
+  </ion-row> 
+
+</ion-content>
